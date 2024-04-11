@@ -5,6 +5,8 @@ public class Main {
 
         System.out.println(area.areaSquare(5));
 
-        System.out.println(area.areaRectangle(5, 4));
+        System.out.println(area.areaRectangle(5,4));
+
+        System.out.println(area.areaParallelogram(5,3));
     }
 }

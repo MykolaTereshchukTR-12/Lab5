@@ -45,7 +45,13 @@ public class Area {
     }
 
     //A right triangle
-
+    public String areaRightTriangle(double first_leg, double second_leg){
+        if(first_leg >= 0 && second_leg >= 0){
+            return "Area of a right triangle by its two legs is " + (0.5 * first_leg * second_leg) + "!";
+        } else {
+            return "Error: right triangle with negative legs does not exist.";
+        }
+    }
 
     //Trapeze
 

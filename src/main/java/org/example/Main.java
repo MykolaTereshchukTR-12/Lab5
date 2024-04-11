@@ -10,5 +10,7 @@ public class Main {
         System.out.println(area.areaParallelogram(5,3));
 
         System.out.println(area.areaRhombus(5,(Math.PI)/3));
+
+        System.out.println(area.areaRightTriangle(3, 4));
     }
 }

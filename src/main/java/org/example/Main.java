@@ -11,10 +11,10 @@ public class Main {
 
         System.out.println(area.areaRhombus(5,(Math.PI)/3));
 
-        System.out.println(area.areaRightTriangle(3,4));
+        System.out.println(area.areaRightTriangle(3, 4));
 
         System.out.println(area.areaTrapeze(10,5,5));
 
-
+        System.out.println(area.areaCircle(4));
     }
 }

@@ -7,7 +7,7 @@ public class Area {
         if(side >= 0){
             return "Area of square is " + (side * side) + "!";
         } else {
-            return "Error: square with negative numbers does not exist.";
+            return "Error: square with negative sides does not exist.";
         }
     }
 
@@ -63,5 +63,11 @@ public class Area {
     }
 
     //Circle
-
+    public String areaCircle(double radius){
+        if(radius >= 0){
+            return "Area of circle is " + (radius * radius * Math.PI) + "!";
+        } else {
+            return "Error: circle with negative radius does not exist.";
+        }
+    }
 }

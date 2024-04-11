@@ -8,5 +8,7 @@ public class Main {
         System.out.println(area.areaRectangle(5,4));
 
         System.out.println(area.areaParallelogram(5,3));
+
+        System.out.println(area.areaRhombus(5,(Math.PI)/3));
     }
 }

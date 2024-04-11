@@ -30,7 +30,19 @@ public class Area {
     }
 
     //Rhombus
-
+    public String areaRhombus(double side, double angle_in_radians){
+        if(side >= 0){
+            if(angle_in_radians >= 0 && angle_in_radians <= (2*Math.PI)){
+                return "Area of rhombus is " + (side * side * Math.sin(angle_in_radians)) + "!";
+            } else if(angle_in_radians < 0){
+                return "Error: the smaller angle is negative.";
+            } else {
+                return "Error: The smaller angle cannot be greater than 2π radians.";
+            }
+        } else {
+            return "Error: rhombus with negative sides does not exist.";
+        }
+    }
 
     //A right triangle
 

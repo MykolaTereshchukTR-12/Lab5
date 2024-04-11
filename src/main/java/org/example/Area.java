@@ -54,9 +54,14 @@ public class Area {
     }
 
     //Trapeze
-
+    public String areaTrapeze(double larger_base, double smaller_base, double height_of_trapezium){
+        if(larger_base < 0 || smaller_base < 0 || height_of_trapezium < 0){
+            return "Error: a trapezoid with negative sides does not exist.";
+        } else {
+            return "Area of trapeze is " + ((larger_base + smaller_base)/2)*(height_of_trapezium) + "!";
+        }
+    }
 
     //Circle
-
 
 }

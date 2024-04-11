@@ -3,18 +3,21 @@ package org.example;
 public class Area {
 
     //Square
-    public double areaSquare(double a) {
-        return a*a;
+    public String areaSquare(double a) {
+        if(a >= 0){
+            return "Area of square is " + a*a + "!";
+        } else {
+            return "Error: square with negative numbers does not exist.";
+        }
     }
 
     //Rectangle
-    public String areaRectangle(double a, double b, double c) {
-        double p = (a + b + c) / 2, res = 0;
-        try { res = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-        } catch(ArithmeticException e) {
-            res = 0;
-            return "Mistake: " + e.getMessage();
-        } return "" + res;
+    public String areaRectangle(double b, double c) {
+        if(b >= 0 && c >= 0){
+            return "Area of rectangle is " + b*c + "!";
+        } else {
+            return "Error: rectangle with negative sides does not exist.";
+        }
     }
 
     //Parallelogram

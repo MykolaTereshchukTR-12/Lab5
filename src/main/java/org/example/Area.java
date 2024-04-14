@@ -1,5 +1,6 @@
 package org.example;
 
+//A class that contains methods responsible for finding the areas of figures
 public class Area {
 
     //Square

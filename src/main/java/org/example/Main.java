@@ -15,7 +15,7 @@ public class Main {
         Main main = new Main();
 
         //Start the program
-        System.out.println("\nHello! This is a program that performs the tasks of laboratory work in the discipline \"Object Oriented Programming\". " +
+        System.out.println("\n=) Hello! This is a program that performs the tasks of laboratory work in the discipline \"Object Oriented Programming\". " +
                 "Let's start work!!!)");
 
         //Initialization of the eternal cycle

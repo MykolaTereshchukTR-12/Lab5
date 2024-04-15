@@ -46,6 +46,7 @@ public class OtherMethods {
         return "" + max;
     }
 
+    //Initialize a control methods that will accept values from the user
     public int controlSYS(){
         Scanner scanner = new Scanner(System.in);
         int control = 0;

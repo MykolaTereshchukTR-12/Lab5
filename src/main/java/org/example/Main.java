@@ -139,7 +139,4 @@ public class Main {
             }
         }
     }
-
-    //Initialize a control method that will accept values from the user
-
 }

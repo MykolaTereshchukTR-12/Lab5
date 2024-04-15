@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class OtherMethods {
 
     //Help block
@@ -41,6 +44,22 @@ public class OtherMethods {
             }
         }
         return "" + max;
+    }
+
+    public int controlSYS(){
+        Scanner scanner = new Scanner(System.in);
+        int control = 0;
+        try {
+            control = scanner.nextInt();
+        } catch(InputMismatchException e) {
+            System.out.println("Please follow the instructions and be careful when working with this program.");
+            return 11;
+        }
+        return control;
+    }
+
+    public String ground(){
+        return "Please follow the instructions and be careful when working with this program.";
     }
 
 }

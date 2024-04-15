@@ -33,7 +33,8 @@ public class Main {
                 case (1): {
                     System.out.println("Enter the actual length of the side of the square:");
                     System.out.println(area.areaSquare(scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -41,7 +42,8 @@ public class Main {
                 case (2): {
                     System.out.println("Enter the actual lengths of the smaller and larger sides of the rectangle:");
                     System.out.println(area.areaRectangle(scanner.nextDouble(), scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -49,7 +51,8 @@ public class Main {
                 case (3): {
                     System.out.println("Enter the actual lengths of the side and the height of the parallelogram:");
                     System.out.println(area.areaParallelogram(scanner.nextDouble(), scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -57,7 +60,8 @@ public class Main {
                 case (4): {
                     System.out.println("Enter the actual length of the rhombus and its smaller angle in radians:");
                     System.out.println(area.areaRhombus(scanner.nextDouble(), scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -65,7 +69,8 @@ public class Main {
                 case (5): {
                     System.out.println("Enter the actual lengths of the legs of a right triangle:");
                     System.out.println(area.areaRightTriangle(scanner.nextDouble(), scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -73,7 +78,8 @@ public class Main {
                 case (6): {
                     System.out.println("Enter the actual lengths of the bases and heights of the trapezium:");
                     System.out.println(area.areaTrapeze(scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -81,7 +87,8 @@ public class Main {
                 case (7): {
                     System.out.println("Enter the actual length of the circle radius:");
                     System.out.println(area.areaCircle(scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -89,7 +96,8 @@ public class Main {
                 case (8): {
                     System.out.println("Enter three real numbers to find the smallest of them:");
                     System.out.println(otherMethods.three(scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble()));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -97,7 +105,8 @@ public class Main {
                 case (9): {
                     System.out.println("Enter the number of elements of the array that will be generated randomly:");
                     System.out.println(Arrays.toString(otherMethods.mass(scanner.nextInt())));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -109,7 +118,8 @@ public class Main {
                         mass[i] = scanner.nextDouble();
                     }
                     System.out.println(otherMethods.largeNumber(mass, mass.length));
-                    main.controlSYS();
+                    System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
+                    control = otherMethods.controlSYS();
                     break;
                 }
 
@@ -117,17 +127,19 @@ public class Main {
                 case (11): {
                     System.out.println("The essence of the program:");
                     System.out.println(otherMethods.help());
-                    control = scanner.nextInt();
+                    control = otherMethods.controlSYS();
                     break;
+                }
+
+                default: {
+                    System.out.println(otherMethods.ground());
+                    System.out.println(otherMethods.help());
+                    control = otherMethods.controlSYS();
                 }
             }
         }
     }
 
     //Initialize a control method that will accept values from the user
-    public void controlSYS(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Do you want to continue? Enter 11 for help or 0 to exit the program.");
-        control = scanner.nextInt();
-    }
+
 }
